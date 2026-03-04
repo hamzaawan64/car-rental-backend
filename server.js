@@ -15,11 +15,8 @@ await connectDB()
 
 // Middleware
 app.use(cors({
-  origin: [
-    'https://carrentoo.vercel.app',
-    'http://localhost:5173'
-  ],
-  credentials: true
+  origin: '*',
+  credentials: false
 }));
 
 app.use(express.json())
