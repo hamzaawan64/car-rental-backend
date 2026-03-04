@@ -15,8 +15,7 @@ await connectDB()
 
 // Middleware
 app.use(cors({
-  origin: '*',
-  credentials: false
+  origin: '*'
 }));
 
 app.use(express.json())
